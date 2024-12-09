@@ -1,0 +1,43 @@
+.form {
+  width: 80%;
+  height: 700px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.input {
+  width: 90%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid rgb(169, 169, 169);
+  background-color: rgb(255, 255, 255);
+  padding-left: 5px;
+}
+.input:focus {
+  outline: 0;
+}
+
+.conteiner {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(135, 49, 255);
+}
+
+.btn {
+  height: 50px;
+  width: 200px;
+  align-self: flex-start;
+  margin-left: 70px;
+  border-radius: 5px;
+}

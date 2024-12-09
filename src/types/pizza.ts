@@ -4,6 +4,6 @@ export type Pizza = {
   description: string;
   price: number;
   previewUrl: string;
-  discount: number | null;
+  discount: number | undefined;
   photos: string[];
 };

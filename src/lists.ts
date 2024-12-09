@@ -8,7 +8,7 @@ export const pizzas: Pizza[] = [
     description: "Cheese pizza",
     price: 100,
     previewUrl: "https://www.pizza.com/cheese.jpg",
-    discount: null,
+    discount: undefined,
     photos: [
       "https://www.pizza.com/cheese1.jpg",
       "https://www.pizza.com/cheese2.jpg",
@@ -20,7 +20,7 @@ export const pizzas: Pizza[] = [
     description: "Pepperoni pizza",
     price: 120,
     previewUrl: "https://www.pizza.com/pepperoni.jpg",
-    discount: null,
+    discount: undefined,
     photos: [
       "https://www.pizza.com/pepperoni1.jpg",
       "https://www.pizza.com/pepperoni2.jpg",
@@ -32,7 +32,31 @@ export const pizzas: Pizza[] = [
     description: "Hawaiian pizza",
     price: 150,
     previewUrl: "https://www.pizza.com/hawaiian.jpg",
-    discount: null,
+    discount: undefined,
+    photos: [
+      "https://www.pizza.com/hawaiian1.jpg",
+      "https://www.pizza.com/hawaiian2.jpg",
+    ],
+  },
+  {
+    id: "3",
+    name: "Hawaiian",
+    description: "Hawaiian pizza",
+    price: 150,
+    previewUrl: "https://www.pizza.com/hawaiian.jpg",
+    discount: undefined,
+    photos: [
+      "https://www.pizza.com/hawaiian1.jpg",
+      "https://www.pizza.com/hawaiian2.jpg",
+    ],
+  },
+  {
+    id: "3",
+    name: "Hawaiian",
+    description: "Hawaiian pizza",
+    price: 150,
+    previewUrl: "https://www.pizza.com/hawaiian.jpg",
+    discount: undefined,
     photos: [
       "https://www.pizza.com/hawaiian1.jpg",
       "https://www.pizza.com/hawaiian2.jpg",

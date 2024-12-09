@@ -15,9 +15,13 @@ export function ProductPage() {
   }
 
   return (
-    <section>
+    <div>
       <p>{pizza.description}</p>
       <p>{pizza.name}</p>
-    </section>
+      <p>{pizza.discount}</p>
+      <p>{pizza.photos}</p>
+      <p>{pizza.previewUrl}</p>
+      <p>{pizza.price}</p>
+    </div>
   );
 }
