@@ -21,8 +21,9 @@ export function ProductPage() {
       <p>{pizza.description}</p>
       <p>{pizza.name}</p>
       <p>{pizza.discount}</p>
-      <p>{pizza.photos}</p>
-      <p>{pizza.previewUrl}</p>
+      {pizza.photos.map((photo) => (
+        <img key={photo} src={photo} alt="" />
+      ))}
       <p>{pizza.price}</p>
     </div>
   );

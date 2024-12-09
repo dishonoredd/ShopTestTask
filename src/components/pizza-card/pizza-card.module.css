@@ -1,0 +1,15 @@
+.pizza {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  bottom: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}

@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import css from "/src/styles/heaader.module.css";
+import { Link } from "react-router-dom"
+import css from "/src/styles/heaader.module.css"
 
 export function Header() {
   return (
     <header className={css.header}>
       <Link to={"/products"} className={css.link}>
-        Пицца
+        Все пиццы
       </Link>
       <Link to={"/favorites"} className={css.link}>
         Избранное
@@ -14,5 +14,5 @@ export function Header() {
         Создать пиццу
       </Link>
     </header>
-  );
+  )
 }
