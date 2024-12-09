@@ -1,12 +1,12 @@
-import { Pizza } from "../../types/pizza"
-import css from "./pizza-card.module.css"
-import { Trash } from "./trash"
+import { Pizza } from "../../types/pizza";
+import css from "./pizza-card.module.css";
+import { Trash } from "./trash";
 
 type Props = {
-  pizza: Pizza
-  isLiked: boolean
-  onLikeToggle: () => void
-}
+  pizza: Pizza;
+  isLiked: boolean;
+  onLikeToggle: () => void;
+};
 
 export function PizzaCard(props: Props) {
   return (
@@ -19,9 +19,19 @@ export function PizzaCard(props: Props) {
       <button className={css.btn}>
         <Trash />
       </button>
-      <button className={css.btn}>
-        <img src="src/assets/heart.svg" alt="" />
+      <button
+        className={css.btn}
+        onClick={(e) => {
+          props.onLikeToggle();
+          e.stopPropagation();
+        }}
+      >
+        {props.isLiked ? (
+          <img src="src/assets/heart-liked.svg" alt="" />
+        ) : (
+          <img src="src/assets/heart.svg" alt="" />
+        )}
       </button>
     </div>
-  )
+  );
 }

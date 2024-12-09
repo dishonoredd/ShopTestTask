@@ -35,7 +35,53 @@
         "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
         "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
       ]
+    },
+    {
+      "id": "ebd73e20-34b6-4db3-9269-9bd212893da3",
+      "name": "ewfewfwef",
+      "price": 8766,
+      "discount": 13,
+      "previewUrl": "wdvwdf",
+      "description": "wef",
+      "photos": []
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "id": "2",
+      "name": "Pepperoni",
+      "description": "Pepperoni pizza",
+      "price": 120,
+      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+      "discount": null,
+      "photos": [
+        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Hawaiian",
+      "description": "Hawaiian pizza",
+      "price": 150,
+      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+      "discount": null,
+      "photos": [
+        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Cheese",
+      "description": "Cheese pizza",
+      "price": 100,
+      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+      "discount": null,
+      "photos": [
+        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
+      ]
+    }
+  ]
 }
