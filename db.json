@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Cheese",
+      "description": "Cheese pizza",
+      "price": 100,
+      "previewUrl": "https://www.pizza.com/cheese.jpg",
+      "discount": null,
+      "photos": [
+        "https://www.pizza.com/cheese1.jpg",
+        "https://www.pizza.com/cheese2.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Pepperoni",
+      "description": "Pepperoni pizza",
+      "price": 120,
+      "previewUrl": "https://www.pizza.com/pepperoni.jpg",
+      "discount": null,
+      "photos": [
+        "https://www.pizza.com/pepperoni1.jpg",
+        "https://www.pizza.com/pepperoni2.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Hawaiian",
+      "description": "Hawaiian pizza",
+      "price": 150,
+      "previewUrl": "https://www.pizza.com/hawaiian.jpg",
+      "discount": null,
+      "photos": [
+        "https://www.pizza.com/hawaiian1.jpg",
+        "https://www.pizza.com/hawaiian2.jpg"
+      ]
+    },
+    {
+      "id": "b9f41e07-7727-4f6f-83d7-dfff361f4fed",
+      "name": "PIZZA",
+      "price": 2000,
+      "discount": 10,
+      "previewUrl": "WPDCPWKC",
+      "description": "QOWBCQUCWQBOUQWBC",
+      "photos": []
+    },
+    {
+      "id": "f4d4c30d-3109-4208-a7dd-26b049a5db11",
+      "name": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+      "price": 865,
+      "discount": 23,
+      "previewUrl": "erger",
+      "description": "wejlbfwebfuwebofuweoufiusgfiyergyfg9ughthfouwhtufhwee0irjiwjrdi23jri23jruh2ourh230hr023hr0h2rh2hr",
+      "photos": []
+    }
+  ]
+}

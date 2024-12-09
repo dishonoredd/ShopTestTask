@@ -13,9 +13,24 @@ export function CreateProductPage() {
 
   const dispatch = useAppDispatch();
 
+  const disabled =
+    name === "" ||
+    description === "" ||
+    previewUrl === "" ||
+    price === undefined;
+
+  const reset = () => {
+    setName("");
+    setDescription("");
+    setDiscount(undefined);
+    setPhotos("");
+    setPreviewUrl("");
+    setPrice(undefined);
+  };
+
   return (
     <section className={css.conteiner}>
-      <form className={css.form}>
+      <form className={css.form} onSubmit={(e) => e.preventDefault()}>
         <input
           className={css.input}
           type="text"
@@ -26,9 +41,10 @@ export function CreateProductPage() {
           }}
         />
         <NumericInput
-          placeholder="Цена"
+          placeholder="Цена в рублях"
           value={price}
           onChange={(number) => setPrice(number)}
+          maxCount={4}
         />
         <input
           className={css.input}
@@ -40,9 +56,10 @@ export function CreateProductPage() {
           }}
         />
         <NumericInput
-          placeholder="Скидка"
+          placeholder="Скидка в %"
           value={discount}
           onChange={(number) => setDiscount(number)}
+          maxCount={2}
         />
 
         <input
@@ -67,27 +84,26 @@ export function CreateProductPage() {
         <button
           className={css.btn}
           onClick={() => {
-            if (!price) {
-              return;
-            }
-            dispatch(
-              productsSlice.actions.addPizza({
-                name: name,
-                price: price,
-                discount: discount,
-                previewUrl: previewUrl,
-                description: description,
-                photos: [],
-                id: crypto.randomUUID(),
-              })
-            );
+            if (disabled) return;
+
+            const product = {
+              name: name,
+              price: price,
+              discount: discount,
+              previewUrl: previewUrl,
+              description: description,
+              photos: [],
+              id: crypto.randomUUID(),
+            };
+
+            dispatch(productsSlice.actions.addPizza(product));
+            fetch("http://localhost:3000/products", {
+              method: "POST",
+              body: JSON.stringify(product),
+            });
+            reset();
           }}
-          disabled={
-            name === "" ||
-            description === "" ||
-            previewUrl === "" ||
-            price === undefined
-          }
+          disabled={disabled}
         >
           Добавить
         </button>

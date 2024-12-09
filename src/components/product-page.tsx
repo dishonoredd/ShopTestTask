@@ -1,8 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import { pizzas } from "../lists";
+import { useAppSelector } from "../store";
 
 export function ProductPage() {
   const { pizzaId } = useParams();
+
+  const pizzas = useAppSelector((state) => state.productsSlice.products);
 
   const pizza = pizzas.find((pizza) => pizza.id === pizzaId);
   if (!pizza) {

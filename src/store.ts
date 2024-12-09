@@ -1,5 +1,4 @@
 import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { pizzas } from "./lists";
 import { Pizza } from "./types/pizza";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -14,7 +13,7 @@ type ProductsState = {
 };
 
 const initialState: ProductsState = {
-  products: pizzas,
+  products: [],
 };
 
 export const productsSlice = createSlice({
@@ -24,11 +23,14 @@ export const productsSlice = createSlice({
     addPizza: (state, action: PayloadAction<Pizza>) => {
       state.products.push(action.payload);
     },
+    setPizzas: (state, action: PayloadAction<Pizza[]>) => {
+      state.products = action.payload;
+    },
   },
 });
 
 export const store = configureStore({
   reducer: {
-    products: productsSlice.reducer,
+    productsSlice: productsSlice.reducer,
   },
 });

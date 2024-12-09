@@ -3,7 +3,7 @@ import { useAppSelector } from "../store";
 import css from "/src/styles/products.module.css";
 
 export function ProductsPage() {
-  const pizzas = useAppSelector((state) => state.products.products);
+  const pizzas = useAppSelector((state) => state.productsSlice.products);
 
   return (
     <section className={css.main}>
@@ -14,8 +14,8 @@ export function ProductsPage() {
               <p>{x.description}</p>
               <p>{x.name}</p>
               <p>{x.discount}</p>
-              {/* <p>{x.photos}</p> */}
-              {/* <p>{x.previewUrl}</p> */}
+              {/* <p>{x.photos}</p>
+              <p>{x.previewUrl}</p> */}
               <p>{x.price}</p>
             </Link>{" "}
             <button className={css.btn}>

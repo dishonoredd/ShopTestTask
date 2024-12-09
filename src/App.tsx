@@ -5,8 +5,18 @@ import { ProductsPage } from "./components/products-page";
 import { ProductPage } from "./components/product-page";
 import { CreateProductPage } from "./components/create-product";
 import { Favorites } from "./components/favorites";
+import { useEffect } from "react";
+import { productsSlice, useAppDispatch } from "./store";
 
 function App() {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    fetch("http://localhost:3000/products")
+      .then((response) => response.json())
+      .then((products) => dispatch(productsSlice.actions.setPizzas(products)));
+  }, []);
+
   return (
     <>
       <Header />
