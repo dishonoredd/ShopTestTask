@@ -1,8 +1,36 @@
 .main {
-  width: 90%;
   padding-top: 30px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
   gap: 10px;
+}
+
+.mainSection {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  color: white;
+
+  background-color: rgb(93, 23, 22);
+
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.p {
+  color: rgb(29, 111, 38);
 }

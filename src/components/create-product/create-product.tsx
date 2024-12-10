@@ -38,7 +38,7 @@ export function CreateProductPage() {
           onChange={(e) => {
             let result = e.target.value;
 
-            if (result.length > 20) return;
+            if (result.length > 15) return;
             setName(e.target.value);
           }}
         />
@@ -76,7 +76,7 @@ export function CreateProductPage() {
           onChange={(e) => {
             let result = e.target.value;
 
-            if (result.length > 30) return;
+            if (result.length > 20) return;
             setDescription(e.target.value);
           }}
         />

@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useAppSelector } from "../store";
+import css from "/src/styles/product.module.css";
 
 export function ProductPage() {
   const { pizzaId } = useParams();
@@ -17,14 +18,17 @@ export function ProductPage() {
   }
 
   return (
-    <div>
-      <p>{pizza.description}</p>
-      <p>{pizza.name}</p>
-      <p>{pizza.discount}</p>
-      {pizza.photos.map((photo) => (
-        <img key={photo} src={photo} alt="" />
-      ))}
-      <p>{pizza.price}</p>
-    </div>
+    <section className={css.section}>
+      <div className={css.element}>
+        <p className={css.title}>{pizza.name}</p>
+        <div className={css.imgContainer}>
+          {pizza.photos.map((photo) => (
+            <img className={css.img} key={photo} src={photo} alt="" />
+          ))}
+        </div>
+        <p className={css.price}>{pizza.price}</p>
+        <p className={css.price}>{pizza.description}</p>
+      </div>
+    </section>
   );
 }

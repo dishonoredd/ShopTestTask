@@ -1,6 +1,6 @@
 import { Pizza } from "../types/pizza";
 
-const baseUrl = "http://localhost:3001";
+const baseUrl = "http://localhost:3002";
 
 export const apiProvider = {
   getPizzas: () =>

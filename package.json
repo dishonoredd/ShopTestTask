@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "client": "vite --open",
-    "server": "yarn json-server .\\db.json -p 3001",
+    "server": "yarn json-server .\\db.json -p 3002",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
