@@ -8,7 +8,6 @@
       "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
       "discount": null,
       "photos": [
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
         "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
       ]
     },
@@ -17,10 +16,10 @@
       "name": "Pepperoni",
       "description": "Pepperoni pizza",
       "price": 120,
-      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+      "previewUrl": "https://media.istockphoto.com/id/521403691/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B9-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%BF%D0%B5%D0%BF%D0%BF%D0%B5%D1%80%D0%BE%D0%BD%D0%B8.jpg?s=612x612&w=0&k=20&c=_VeGBLIkUWbhyRijGdBcuB80I4D66009wJvyHmDhiLA=",
       "discount": null,
       "photos": [
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+        "https://media.istockphoto.com/id/521403691/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B9-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%BF%D0%B5%D0%BF%D0%BF%D0%B5%D1%80%D0%BE%D0%BD%D0%B8.jpg?s=612x612&w=0&k=20&c=_VeGBLIkUWbhyRijGdBcuB80I4D66009wJvyHmDhiLA=",
         "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
       ]
     },
@@ -29,7 +28,7 @@
       "name": "Hawaiian",
       "description": "Hawaiian pizza",
       "price": 150,
-      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
+      "previewUrl": "https://momentopizza.ru/images/vid-pizza.jpg",
       "discount": null,
       "photos": [
         "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
@@ -46,42 +45,5 @@
       "photos": []
     }
   ],
-  "favorites": [
-    {
-      "id": "2",
-      "name": "Pepperoni",
-      "description": "Pepperoni pizza",
-      "price": 120,
-      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
-      "discount": null,
-      "photos": [
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
-      ]
-    },
-    {
-      "id": "3",
-      "name": "Hawaiian",
-      "description": "Hawaiian pizza",
-      "price": 150,
-      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
-      "discount": null,
-      "photos": [
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
-      ]
-    },
-    {
-      "id": "1",
-      "name": "Cheese",
-      "description": "Cheese pizza",
-      "price": 100,
-      "previewUrl": "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
-      "discount": null,
-      "photos": [
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927",
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
-      ]
-    }
-  ]
+  "favorites": []
 }

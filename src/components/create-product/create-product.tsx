@@ -1,29 +1,33 @@
-import { useState } from "react"
-import { NumericInput } from "../../ui/numeric-input/numeric-input"
-import { productsSlice, useAppDispatch } from "../../store"
-import css from "./create.module.css"
-import { TextInput } from "../../ui/text-input/text-input"
+import { useState } from "react";
+import { NumericInput } from "../../ui/numeric-input/numeric-input";
+import { productsSlice, useAppDispatch } from "../../store";
+import css from "./create.module.css";
+import { TextInput } from "../../ui/text-input/text-input";
 
 export function CreateProductPage() {
-  const [name, setName] = useState("")
-  const [description, setDescription] = useState("")
-  const [discount, setDiscount] = useState<number | undefined>(undefined)
-  const [photos, setPhotos] = useState("")
-  const [previewUrl, setPreviewUrl] = useState("")
-  const [price, setPrice] = useState<number | undefined>(undefined)
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+  const [discount, setDiscount] = useState<number | undefined>(undefined);
+  const [photos, setPhotos] = useState("");
+  const [previewUrl, setPreviewUrl] = useState("");
+  const [price, setPrice] = useState<number | undefined>(undefined);
 
-  const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch();
 
-  const disabled = name === "" || description === "" || previewUrl === "" || price === undefined
+  const disabled =
+    name === "" ||
+    description === "" ||
+    previewUrl === "" ||
+    price === undefined;
 
   const reset = () => {
-    setName("")
-    setDescription("")
-    setDiscount(undefined)
-    setPhotos("")
-    setPreviewUrl("")
-    setPrice(undefined)
-  }
+    setName("");
+    setDescription("");
+    setDiscount(undefined);
+    setPhotos("");
+    setPreviewUrl("");
+    setPrice(undefined);
+  };
 
   return (
     <section className={css.container}>
@@ -32,18 +36,25 @@ export function CreateProductPage() {
           placeholder="Название"
           value={name}
           onChange={(e) => {
-            setName(e.target.value)
+            let result = e.target.value;
+
+            if (result.length > 20) return;
+            setName(e.target.value);
           }}
         />
-        <NumericInput placeholder="Цена в рублях" value={price} onChange={(number) => setPrice(number)} maxCount={4} />
+        <NumericInput
+          placeholder="Цена в рублях"
+          value={price}
+          onChange={(number) => setPrice(number)}
+          maxCount={4}
+        />
         <TextInput
           placeholder="Ссылка на превью"
           value={previewUrl}
           onChange={(e) => {
-            setPreviewUrl(e.target.value)
+            setPreviewUrl(e.target.value);
           }}
         />
-
         {previewUrl && <img className={css.preview} src={previewUrl} alt="" />}
         <NumericInput
           placeholder="Скидка в %"
@@ -51,31 +62,28 @@ export function CreateProductPage() {
           onChange={(number) => setDiscount(number)}
           maxCount={2}
         />
-
-        <input
-          className={css.input}
-          type="text"
+        <TextInput
           placeholder="Ссылка на фото"
           value={photos}
           onChange={(e) => {
-            setPhotos(e.target.value)
+            setPhotos(e.target.value);
           }}
         />
 
-        <input
-          className={css.input}
-          type="text"
+        <TextInput
           placeholder="Описание"
           value={description}
           onChange={(e) => {
-            setDescription(e.target.value)
+            let result = e.target.value;
+
+            if (result.length > 30) return;
+            setDescription(e.target.value);
           }}
         />
-
         <button
           className={css.btn}
           onClick={() => {
-            if (disabled) return
+            if (disabled) return;
 
             const product = {
               name: name,
@@ -85,14 +93,14 @@ export function CreateProductPage() {
               description: description,
               photos: [],
               id: crypto.randomUUID(),
-            }
+            };
 
-            dispatch(productsSlice.actions.addPizza(product))
+            dispatch(productsSlice.actions.addPizza(product));
             fetch("http://localhost:3000/products", {
               method: "POST",
               body: JSON.stringify(product),
-            })
-            reset()
+            });
+            reset();
           }}
           disabled={disabled}
         >
@@ -100,5 +108,5 @@ export function CreateProductPage() {
         </button>
       </form>
     </section>
-  )
+  );
 }
