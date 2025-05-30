@@ -1,13 +1,13 @@
 import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Header } from "./components/header";
-import { ProductsPage } from "./components/products-page";
-import { ProductPage } from "./components/product-page";
+import { Header } from "./components/header/header";
+import { ProductsPage } from "./components/products/products-page";
 import { CreateProductPage } from "./components/create-product/create-product";
-import { Favorites } from "./components/favorites";
+import { Favorites } from "./components/favorites/favorites";
 import { useEffect } from "react";
 import { productsSlice, useAppDispatch } from "./store";
 import { apiProvider } from "./api/api-provider";
+import { ProductPage } from "./components/product/product-page";
 
 const useLoadPizzas = () => {
   const dispatch = useAppDispatch();

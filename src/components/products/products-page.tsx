@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { productsSlice, useAppDispatch, useAppSelector } from "../store";
-import css from "/src/styles/products.module.css";
-import { PizzaCard } from "./pizza-card/pizza-card";
-import { useFavoritePizzas } from "../hooks/use-favorite-pizzas";
-import { apiProvider } from "../api/api-provider";
+import { productsSlice, useAppDispatch, useAppSelector } from "../../store";
+import css from "/src/components/products/products.module.css";
+import { PizzaCard } from "../pizza-card/pizza-card";
+import { useFavoritePizzas } from "../../hooks/use-favorite-pizzas";
+import { apiProvider } from "../../api/api-provider";
 import { useState } from "react";
 
 export function ProductsPage() {
@@ -27,7 +27,7 @@ export function ProductsPage() {
     setPage(page + 1);
   };
 
-  const ELEMENTS_PER_PAGE = 6;
+  const ELEMENTS_PER_PAGE = 8;
 
   const maxPages = Math.ceil(pizzas.length / ELEMENTS_PER_PAGE);
 

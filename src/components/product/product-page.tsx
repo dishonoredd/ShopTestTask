@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
-import { useAppSelector } from "../store";
-import css from "/src/styles/product.module.css";
+import css from "/src/components/product/product.module.css";
+import { useAppSelector } from "../../store";
 
 export function ProductPage() {
   const { pizzaId } = useParams();

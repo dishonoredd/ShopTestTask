@@ -1,8 +1,8 @@
-import { PizzaCard } from "./pizza-card/pizza-card";
-import { apiProvider } from "../api/api-provider";
-import { useFavoritePizzas } from "../hooks/use-favorite-pizzas";
-import { productsSlice, useAppDispatch } from "../store";
-import css from "/src/styles/products.module.css";
+import { PizzaCard } from "../pizza-card/pizza-card";
+import { apiProvider } from "../../api/api-provider";
+import { useFavoritePizzas } from "../../hooks/use-favorite-pizzas";
+import { productsSlice, useAppDispatch } from "../../store";
+import css from "/src/components/favorites/favorites.module.css";
 
 export function Favorites() {
   const favoritePizzas = useFavoritePizzas();

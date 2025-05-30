@@ -170,17 +170,6 @@
       ]
     },
     {
-      "id": "1",
-      "name": "Cheese",
-      "description": "Cheese pizza",
-      "price": 100,
-      "previewUrl": "https://e0.edimdoma.ru/data/posts/0002/1429/21429-ed4_wide.jpg?1631194036",
-      "discount": null,
-      "photos": [
-        "https://cdn.culture.ru/images/080174a8-44c0-534a-824c-bf63712be927"
-      ]
-    },
-    {
       "id": "5",
       "name": "Pepperoni",
       "description": "Pepperoni pizza",

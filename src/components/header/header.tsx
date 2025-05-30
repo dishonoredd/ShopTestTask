@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import css from "/src/styles/heaader.module.css"
+import { Link } from "react-router-dom";
+import css from "/src/components/header/heaader.module.css";
 
 export function Header() {
   return (
@@ -14,5 +14,5 @@ export function Header() {
         Создать пиццу
       </Link>
     </header>
-  )
+  );
 }
