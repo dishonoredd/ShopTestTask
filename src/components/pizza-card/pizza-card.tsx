@@ -24,8 +24,11 @@ export function PizzaCard(props: Props) {
       className={`${css.pizza} ${props.isLiked ? css.active : ""}`}
       key={props.pizza.id}
     >
-      {" "}
-      <img className={css.img} src={props.pizza.previewUrl} alt="" />
+      <img
+        className={css.img}
+        src={props.pizza.previewUrl}
+        alt="ваша кратинка"
+      />
       <p className={`${css.p} ${css.wide}`}>{props.pizza.name}</p>
       <p className={css.p}>{props.pizza.description}</p>
       {props.pizza.discount ? (

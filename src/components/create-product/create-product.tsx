@@ -69,19 +69,17 @@ export function CreateProductPage() {
             setPhotos(e.target.value);
           }}
         />
-
         <TextInput
           placeholder="Описание"
           value={description}
           onChange={(e) => {
             let result = e.target.value;
-
             if (result.length > 20) return;
             setDescription(e.target.value);
           }}
         />
         <button
-          className={css.btn}
+          className={`${disabled ? css.disabled : css.btn}`}
           onClick={() => {
             if (disabled) return;
 

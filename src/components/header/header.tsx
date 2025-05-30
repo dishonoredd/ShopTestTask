@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header className={css.header}>
       <Link to={"/products"} className={css.link}>
-        Все пиццы
+        Вся пицца
       </Link>
       <Link to={"/favorites"} className={css.link}>
         Избранное
